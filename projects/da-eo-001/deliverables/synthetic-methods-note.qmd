@@ -1,0 +1,71 @@
+---
+title: "Synthetic Heat-Pattern Methods Note"
+description: "A fictional methods record returned for clearer units and missing-value treatment."
+project-id: DA-EO-001
+deliverable-id: DA-EO-001-D02
+status: changes-requested
+owner: "Eli Navarro (fictional)"
+reviewer: "Omar Reyes (fictional)"
+synthetic: true
+---
+
+::: {.callout-warning}
+This methods note is entirely synthetic. Its author, reviewer, dates, inputs, places, measurements, and findings are fabricated for training.
+:::
+
+## Current review state
+
+- **Text status:** `changes-requested`
+- **Owner:** Eli Navarro (fictional)
+- **Reviewer:** Omar Reyes (fictional steward)
+- **Reason:** the note does not yet define temperature units consistently or explain how one missing shade value affects the summary.
+- **Expected return status:** `internal-review`
+
+The illustrative GitHub Issue would be authoritative. This published page does not complete the requested changes or alter status.
+
+## Synthetic method
+
+The training method assigns each fictional location an illustrative exposure rank using three invented observations: modeled surface temperature, estimated shade coverage, and pedestrian count. Values are normalized within the five-row teaching table, then compared narratively. No composite score is treated as a real finding.
+
+## Data lineage
+
+1. A fabricated `harborlight-observations` worksheet supplies five invented location labels and values.
+2. A fictional cleanup step standardizes location labels and preserves the original synthetic values in a separate column.
+3. A local training table records the displayed values used by the decision brief.
+4. The methods note describes transformations and limitations in repository-controlled text.
+
+There is no live worksheet link, external dataset, automated synchronization, or cross-repository harvest. A real project would record an approved access-safe working-document link in its Issue.
+
+## Requested revisions
+
+1. State whether every temperature value is degrees Celsius, degrees Fahrenheit, or another measure.
+2. Distinguish surface temperature from air temperature throughout.
+3. Explain how the missing shade value in the fictional draft is represented and whether it is excluded from comparison.
+4. Add a check that prevents a missing value from silently becoming zero.
+5. Reconcile the methods description with the decision brief before requesting review.
+
+## Units and missing-value concerns
+
+The current draft labels the output only as “temperature,” which is ambiguous. The revised note must use **modeled surface temperature at 3 p.m. in degrees Celsius (°C)** consistently and must not imply that it measures ambient air temperature.
+
+One fictional source row for Eastglass originally had no shade observation. The displayed training table currently uses an invented reviewed estimate of 11%, but the lineage does not yet explain that substitution. Until the provenance and handling rule are explicit, a reviewer cannot reproduce the narrative comparison. Missing values must remain missing unless a documented synthetic estimate is approved; they must never be silently converted to zero.
+
+## Revision and review history
+
+| Fictional date | Event | Result |
+|---|---|---|
+| March 27, 2030 | Eli Navarro drafted the synthetic method. | Initial narrative complete. |
+| April 1, 2030 | Omar Reyes reviewed the note. | Unit ambiguity and missing-value treatment identified. |
+| April 3, 2030 | Illustrative Issue set to `changes-requested`. | Revisions assigned to Eli Navarro. |
+
+## Limitations
+
+- The input is fabricated and far too small for inference.
+- The normalization approach is illustrative and not validated.
+- No uncertainty, equity, feasibility, seasonality, or spatial-dependence analysis exists.
+- The described worksheet is a placeholder, not a durable accepted artifact.
+- The current method must not be used for a real location or partner decision.
+
+## Next action
+
+Eli Navarro (fictional) updates the unit definitions, documents the synthetic Eastglass estimate and missing-value rule, and checks the description against D01. Omar Reyes then reviews the diff and evidence against the requested revisions. If the revisions are complete, the authoritative Issue returns to `internal-review`; publication alone does not make that transition.

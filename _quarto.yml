@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "projects/**/*.qmd"
 
 website:
   title: "Developers Academy Platform"
@@ -10,7 +13,26 @@ website:
     - source
     - issue
   repo-link-target: _blank
-  search: true
+
+  navbar:
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Start here"
+        href: start-here.qmd
+      - text: "Contribute"
+        menu:
+          - text: "First pull request"
+            href: first-pull-request.qmd
+          - text: "Troubleshoot with Copilot"
+            href: copilot-troubleshooting.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "Leadership review"
+        href: projects/da-eo-001/deliverables/priority-locations-decision-brief.qmd
+      - text: "Repository stewards"
+        href: stewards.qmd
 
 format:
   html:

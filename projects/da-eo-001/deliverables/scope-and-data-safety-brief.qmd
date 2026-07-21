@@ -1,0 +1,66 @@
+---
+title: "Project Scope and Data-Safety Brief"
+description: "The synthetic project's accepted and repository-preserved scope boundary."
+project-id: DA-EO-001
+deliverable-id: DA-EO-001-D03
+status: accepted
+owner: "Nia Calder (fictional)"
+reviewer: "Omar Reyes (fictional)"
+synthetic: true
+accepted-artifact: "projects/da-eo-001/deliverables/scope-and-data-safety-brief.qmd"
+---
+
+::: {.callout-warning}
+This accepted example is synthetic. All people, dates, project context, and decisions are fictional, and the brief permits synthetic data only.
+:::
+
+## Accepted scope
+
+The Harborlight pilot exists solely to test issue-first onboarding, review, preservation, and handoff. It may use fabricated location labels, invented observations, fictional people, and clearly marked placeholder review history. It must not use production participant, partner, project, location, personal, or restricted information.
+
+## Data-safety rules
+
+- Use only explicitly synthetic fixtures and demonstrations.
+- Do not include credentials, tokens, private keys, service-account files, or browser-delivered secrets.
+- Do not publish private Google Workspace links.
+- Do not copy real participant, partner, project, or restricted content into prompts, fixtures, screenshots, or pages.
+- Keep actionable work and acceptance decisions in GitHub Issues; do not automate feedback ingestion.
+- Preserve accepted artifacts only in an organization-controlled repository or approved archive.
+
+## Acceptance criteria and evidence
+
+| Criterion | Synthetic evidence recorded in the illustrative Issue |
+|---|---|
+| Scope is limited to a fictional training lifecycle. | The brief explicitly excludes real use and all project pages carry synthetic labeling. |
+| Data and security boundaries are explicit. | The rules above prohibit restricted data, secrets, and private links. |
+| Internal steward review is complete. | Omar Reyes (fictional) recorded review completion on April 4, 2030 (fictional). |
+| The accepted version is durably preserved. | This source file exists at the repository path recorded in `accepted-artifact`. |
+| Required leadership decision is recorded. | Leadership review was not required for this internal safety boundary. |
+
+The illustrative Issue records `accepted` only because all required criteria, internal review, and durable artifact location are represented together. No live synthetic Issue was created by this implementation.
+
+## Preservation record
+
+- **Accepted artifact path:** `projects/da-eo-001/deliverables/scope-and-data-safety-brief.qmd`
+- **Preservation method:** repository-controlled Quarto source reviewed through the reference implementation workflow
+- **Fictional acceptance date:** April 4, 2030
+- **Owner:** Nia Calder (fictional)
+- **Reviewer:** Omar Reyes (fictional)
+- **Leadership review:** not required for this deliverable
+
+## Distinct lifecycle events
+
+| Event | State in this synthetic example |
+|---|---|
+| Implementation completion | The brief content and validation metadata exist. |
+| GitHub Issue acceptance | Represented as recorded after criteria, review, and preservation were satisfied. |
+| Leadership acceptance | Not required and not claimed. |
+| Repository preservation | Represented by the source file at the exact accepted artifact path. |
+| Quarto publication | Makes the brief readable; it does not create or prove acceptance. |
+| Developedia curation | Optional and not a requirement for this accepted artifact. |
+
+Repository preservation does not require Developedia publication. Quarto publication does not indicate leadership acceptance. An accepted artifact may remain unpublished in Developedia, and only selected accepted knowledge should be curated there through separately approved work.
+
+## Limitations and maintenance
+
+This brief demonstrates a record structure, not a completed external governance review. Future maintainers must keep its synthetic boundary intact, validate metadata locally, and use a new approved Issue for any platform-contract change. Replacing the artifact path, acceptance rationale, or data boundary requires explicit review; a page edit alone must not silently rewrite the authoritative acceptance record.

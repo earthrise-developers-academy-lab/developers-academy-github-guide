@@ -1,0 +1,40 @@
+---
+title: "Projects"
+description: "Synthetic project and deliverable records for the v0.1 reference lifecycle."
+listing:
+  - id: project-catalog
+    contents:
+      - "da-eo-001/index.qmd"
+    type: table
+    fields: [title, project-id, description, iteration, phase, owner, steward]
+  - id: deliverable-overview
+    contents:
+      - "da-eo-001/deliverables/*.qmd"
+    type: table
+    fields: [title, deliverable-id, project-id, status, owner, reviewer]
+    sort: "deliverable-id"
+---
+
+Every record on this page is fictional and synthetic. It exists to demonstrate structure and lifecycle behavior without production participant, partner, project, location, or research data.
+
+GitHub Issues would be authoritative for live operational and acceptance status. These Quarto listings render repository metadata for orientation; they do not update an Issue, persist feedback, or prove acceptance.
+
+## Project catalog
+
+::: {#project-catalog}
+:::
+
+## Deliverable overview
+
+The text in the **status** column communicates lifecycle state without relying on color.
+
+::: {#deliverable-overview}
+:::
+
+## Reading the examples
+
+- Open the project title for context, ownership, decisions, limitations, and continuation guidance.
+- Open a deliverable title for the artifact and review record.
+- Use the [cohort handoff](da-eo-001/handoff.qmd) to see what a future team needs.
+
+The static records deliberately contain no fabricated clickable GitHub Issues or private working-document links. In a live project, every deliverable would link to its real authoritative Issue and only access-safe working locations.

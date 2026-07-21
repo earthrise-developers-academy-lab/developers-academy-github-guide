@@ -1,0 +1,97 @@
+---
+title: "Troubleshoot with GitHub Copilot"
+description: "Use an Issue, evidence, small tests, and human review to investigate a synthetic bug."
+---
+
+Copilot can help explain errors, rank hypotheses, and draft bounded changes. Its advice is not evidence, a hypothesis is not a root cause, generated code is not validation, and a human remains responsible for the result.
+
+The following twelve-step exercise is entirely fictional. It investigates a synthetic bug in a practice catalog: a deliverable with the text status `changes-requested` is missing from a local preview. No production data, credentials, private links, or partner information belong in the prompt.
+
+## Twelve-step workflow
+
+### 1. Read the authoritative Issue
+
+Confirm that the fictional Issue states the observed behavior, expected behavior, reproduction steps, affected page, boundaries, acceptance criteria, and owner. Do not substitute a Copilot conversation for the Issue.
+
+### 2. Reproduce the symptom
+
+Open the synthetic catalog locally and follow the Issue's steps. Record whether the `changes-requested` deliverable is absent. A report you cannot reproduce is still evidence, but it requires a different next question.
+
+### 3. Capture safe evidence
+
+Copy the exact non-sensitive error text, relevant file paths, tool versions, and smallest reproducible input into a working note or the Issue. Remove tokens, personal data, private URLs, and unrelated content.
+
+### 4. Restate constraints
+
+Tell Copilot that the work is limited to the fictional Issue, must preserve the exact status vocabulary, must avoid unrelated refactoring, and must not edit before diagnosis.
+
+### 5. Ask for ranked hypotheses
+
+Use a prompt such as:
+
+```text
+Use the fictional catalog Issue as the problem statement. Do not edit files yet.
+
+Given the reproduction steps and safe evidence, provide:
+1. the most relevant local files;
+2. three ranked hypotheses;
+3. the smallest test for each hypothesis;
+4. missing information; and
+5. assumptions that remain unverified.
+
+Do not claim a root cause without evidence.
+```
+
+### 6. Review every suggestion
+
+Check proposed file paths and commands against the repository. Reject suggestions that broaden scope, require secrets or restricted data, use network calls unnecessarily, or introduce excluded architecture.
+
+### 7. Choose the smallest hypothesis test
+
+For example, inspect whether the deliverable front matter contains a scalar `status: changes-requested` and whether the listing includes that file. This test investigates a hypothesis; it does not prove a root cause in advance.
+
+### 8. Run the test yourself
+
+Execute or inspect the proposed test, save the observed result, and note the exact command or manual action. Do not report a test as passing if it was not run.
+
+### 9. Classify the hypothesis
+
+Mark it **supported**, **rejected**, or **still uncertain**, and explain why. If the evidence rejects it, test the next bounded hypothesis rather than asking Copilot to guess more confidently.
+
+### 10. Request the smallest change
+
+Only after evidence supports a cause, ask Copilot to propose the minimum change that satisfies the fictional Issue and to identify the validation that should detect a regression. Review the generated diff before applying it.
+
+### 11. Validate generated work
+
+Run the repository's required checks, reproduce the original scenario, inspect the full diff, and review security, privacy, accessibility, and maintainability. Generated code is merely a candidate until these human-controlled checks provide evidence.
+
+### 12. Record the verified outcome
+
+Update the Issue with the supported cause, change made, commands run, observed results, remaining uncertainty, and next action. Request steward review. Only the authoritative Issue and approved review process can record resolution or acceptance.
+
+## Evidence record template
+
+```markdown
+### Troubleshooting result
+
+**Observed symptom**
+-
+
+**Hypothesis tested**
+-
+
+**Test and result**
+-
+
+**Conclusion**
+- Supported / rejected / uncertain
+
+**Change and validation**
+-
+
+**Remaining uncertainty and next action**
+-
+```
+
+Ask a steward for help when the evidence conflicts, a suggestion changes many files, validation is unavailable, permissions are involved, or any input may be sensitive.

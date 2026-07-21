@@ -1,0 +1,66 @@
+---
+title: "Repository steward guide"
+description: "Support participants, preserve review quality, and prepare durable handoffs."
+---
+
+Repository stewards help participants move from an approved Issue to a reviewable, preserved result. They protect scope and repository quality without turning the Git client into a second workflow. GitHub Desktop is the default participant interface; stewards may use the command line or another Git client.
+
+## Scope actionable Issues
+
+Before work begins, confirm that the Issue identifies the outcome, boundaries, owner, steward, artifact, working location, acceptance criteria, dependencies, current status, and next action. Split unrelated outcomes into separately approved Issues. Escalate conflicts with `PLATFORM_SPEC.md`; do not invent a missing product decision.
+
+## Support progressive Git onboarding
+
+Meet the participant at the current task. Help them understand the differences among an Issue, Project, branch, commit, and pull request before introducing extra Git concepts. Pair on repository access, Issue-specific branches, diff review, focused commits, validation, pull-request creation, and conflict recovery. Never erase unexplained local work to make the branch look clean.
+
+## Keep status authoritative
+
+The GitHub Issue controls operational and acceptance status. Review progress comments, blockers, decisions, evidence, and next actions there. Reconcile GitHub Project fields to the Issue rather than allowing a Project value to become a competing status record. Use only the approved v0.1 vocabulary.
+
+## Review repository changes
+
+Check the pull request against the Issue and the platform contract. Review the full diff, validation evidence, rendered content when relevant, accessibility, privacy, security, maintainability, and handoff context. Request focused changes when criteria are not met. A merged pull request does not automatically establish leadership or Issue acceptance.
+
+## Translate leadership feedback manually
+
+During v0.1, a steward or participant reads leadership feedback and records its actionable meaning in the associated Issue. Include the decision or requested change, source context when safe, owner, next action, and resulting status. Do not automatically create Issues or comments from Google Workspace.
+
+Illustrative translation for the synthetic Harborlight project:
+
+```markdown
+### Leadership feedback translated by steward — fictional example
+
+**Review input**
+Dr. Imani Brooks selected Option B and requested an uncertainty note for Location E.
+
+**Actionable changes**
+- Revise the priority table rationale for Option B.
+- Add the requested uncertainty note.
+
+**Owner**
+Nia Calder (fictional)
+
+**Next status and action**
+Set `changes-requested`; return the revised brief for internal review.
+
+**Source**
+Non-GitHub leadership feedback placeholder; no live or private link.
+```
+
+The example is not a real Issue update and records no actual decision.
+
+## Preserve accepted artifacts
+
+Before setting `accepted`, verify that criteria and required decisions are recorded, validation evidence exists, review changes are resolved, and the accepted version is stored in an organization-controlled repository through a reviewed pull request or in an approved archive. Record the exact durable location in the Issue.
+
+Preservation does not require Developedia publication. Curate only accepted knowledge with lasting onboarding, reference, methodological, or continuation value. Quarto publication does not establish leadership acceptance.
+
+## Prepare cohort handoff
+
+Confirm the stable project identifier, iteration, current state, owner, steward, blockers, next action, decisions and rationale, working-document links, acceptance history, artifact locations, unresolved Issues, access dependencies, and maintenance expectations. Preserve essential rationale in GitHub or repository content so loss of an external working document does not erase the decision record.
+
+Use the [synthetic handoff](projects/da-eo-001/handoff.qmd) as a model.
+
+## Escalate instead of guessing
+
+Pause and seek the appropriate owner when scope conflicts with the platform contract, sensitive information may be exposed, a permission or repository setting must change, acceptance authority is unclear, validation cannot be reproduced, or an artifact lacks an approved durable home.

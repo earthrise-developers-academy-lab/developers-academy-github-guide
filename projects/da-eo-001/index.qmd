@@ -1,0 +1,75 @@
+---
+title: "Harborlight Heat & Shade Atlas"
+description: "A synthetic project testing how a fictional team could prioritize shade-planning evidence."
+project-id: DA-EO-001
+iteration: "Pilot iteration (synthetic)"
+owner: "Nia Calder (fictional)"
+steward: "Omar Reyes (fictional)"
+phase: "Evidence review and preservation"
+synthetic: true
+---
+
+::: {.callout-warning}
+## Synthetic training record
+
+Harborlight, every named person and location, all dates, measurements, findings, feedback, and decisions on these pages are fabricated. They do not describe a real participant, partner, place, or project.
+:::
+
+## Purpose and intended users
+
+The Harborlight Heat & Shade Atlas demonstrates how a project team might organize synthetic observations about afternoon heat and pedestrian shade into reviewable deliverables. Its fictional intended users are a community planning workshop, a program leadership group, and a future Developers Academy cohort practicing evidence handoff.
+
+The project tests workflow clarity, not environmental findings. No production dataset or live application exists.
+
+## Current state
+
+- **Stable project identifier:** `DA-EO-001`
+- **Iteration:** Pilot iteration (synthetic), not a cohort-year identity
+- **Phase:** Evidence review and preservation
+- **Owner:** Nia Calder (fictional)
+- **Repository steward:** Omar Reyes (fictional)
+- **Next project action:** translate the fictional leadership decision for D01 into its illustrative Issue record, revise D02, and preserve any newly accepted version through review
+
+GitHub Issues would remain authoritative for each live deliverable. This static reference shows a metadata snapshot only. No synthetic GitHub Issues were created, and the deliverable identifiers below are not links to live work.
+
+## Deliverables
+
+| ID | Deliverable | Text status | Next action |
+|---|---|---|---|
+| `DA-EO-001-D01` | [Priority Locations Decision Brief](deliverables/priority-locations-decision-brief.qmd) | `leadership-review` | Obtain one fictional option decision through the documented non-GitHub path, then translate it manually. |
+| `DA-EO-001-D02` | [Synthetic Heat-Pattern Methods Note](deliverables/synthetic-methods-note.qmd) | `changes-requested` | Clarify units and missing-value handling, then return to `internal-review`. |
+| `DA-EO-001-D03` | [Project Scope and Data-Safety Brief](deliverables/scope-and-data-safety-brief.qmd) | `accepted` | Preserve the accepted record; curate it into Developedia only if an approved Issue later identifies lasting value. |
+
+The [project catalog](../index.qmd) also renders these deliverables as a Quarto listing.
+
+## Iteration history
+
+| Iteration | Fictional outcome |
+|---|---|
+| Pilot setup | Assigned stable identity, synthetic owners, and data-safety boundaries. |
+| Pilot evidence pass | Drafted five fabricated location observations and a methods note. |
+| Pilot review pass | Sent D01 to fictional leadership review, returned D02 for changes, and recorded D03 as accepted and preserved. |
+
+## Decisions and rationale
+
+1. **Use only synthetic evidence.** The pilot validates platform workflow without exposing real locations, people, partner needs, or restricted data.
+2. **Keep operational decisions in Issues.** Working-document comments may inform a decision, but a steward must translate actionable feedback manually.
+3. **Preserve the safety brief in this repository.** The Markdown source is suitable for Git review and supplies a durable example.
+4. **Curate selectively.** Acceptance and preservation do not require Developedia publication.
+
+These rationales are stored locally so they remain understandable even if a future external working-document link becomes unavailable.
+
+## Working and durable locations
+
+- **Working documents:** clearly labeled nonfunctional placeholders only; no private Google Workspace link is published.
+- **Accepted artifact:** [D03 at its repository-controlled source path](deliverables/scope-and-data-safety-brief.qmd).
+- **Application:** none; this is a static reference project.
+- **Developedia entry:** this Quarto project summary is a pilot knowledge entry, not proof of leadership acceptance.
+
+## Methods and limitations
+
+The demonstration uses a fabricated five-row table and a synthetic methods narrative. It has not been calibrated, field-tested, peer-reviewed, or used to guide a real decision. The small sample, invented values, simplified scoring, and intentionally incomplete uncertainty treatment make it unsuitable for analysis outside the training scenario.
+
+## Continuation
+
+Read the [cohort handoff](handoff.qmd) before changing the project. It records current state, ownership, blockers, next action, rationale, artifact locations, unresolved work, and maintenance expectations for the next fictional iteration.

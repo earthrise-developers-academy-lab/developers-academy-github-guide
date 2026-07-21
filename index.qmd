@@ -1,0 +1,49 @@
+---
+title: "Developers Academy Platform"
+description: "Issue-first onboarding, review, preservation, and project continuity."
+---
+
+Welcome to the Developers Academy reference platform. It shows how a participant can begin useful work with limited Git experience, how leadership can review a deliverable without using GitHub, and how future cohorts can continue a project without losing its history.
+
+::: {.callout-important}
+## Start with the Issue
+
+GitHub Issues are authoritative for active work, operational status, blockers, decisions, acceptance criteria, and recorded acceptance. A GitHub Project is a cross-project view derived from Issues; if the two disagree, the Issue governs.
+:::
+
+## Choose your path
+
+- **New participant:** follow [Start here](start-here.qmd) to find, understand, claim, and update an Issue.
+- **Ready to contribute a file:** use the [first pull request guide](first-pull-request.qmd), with GitHub Desktop as the default participant interface.
+- **Investigating a problem:** work through the [Copilot troubleshooting guide](copilot-troubleshooting.qmd) and verify every suggestion.
+- **Reviewing for leadership:** open the [synthetic decision brief](projects/da-eo-001/deliverables/priority-locations-decision-brief.qmd).
+- **Supporting a repository:** use the [repository steward guide](stewards.qmd).
+- **Continuing prior work:** browse the [synthetic project catalog](projects/index.qmd) and its handoff record.
+
+## Five GitHub objects to remember
+
+| Object | What it does | What it does not do |
+|---|---|---|
+| **Issue** | Defines a task, bug, decision, or deliverable; records scope, progress, blockers, criteria, decisions, and acceptance. | Preserve the artifact contents by itself. |
+| **Project** | Shows Issues across projects for coordination and filtering. | Override or replace an Issue's authoritative status. |
+| **Branch** | Provides an isolated workspace for a related set of file changes. | Approve or publish those changes. |
+| **Commit** | Records a focused snapshot of changes on a branch. | Submit the changes for review by itself. |
+| **Pull request** | Proposes repository changes for review, validation, and merge. | Establish leadership acceptance or Issue acceptance by itself. |
+
+## Where work lives
+
+| Component | Responsibility |
+|---|---|
+| GitHub Issues | Operational and acceptance source of truth |
+| GitHub Projects | Cross-project views that reflect Issues |
+| Google Docs, Sheets, and Slides | Collaborative drafting, suggestions, and leadership comments |
+| Pull requests | Review gate for changes entering a repository |
+| Organization-controlled repositories or approved archives | Durable preservation of accepted artifacts |
+| Quarto | Static onboarding, leadership-review, and publication layer |
+| Developedia | Selective curation of accepted knowledge with lasting value |
+
+Google Workspace is not authoritative for completion. Quarto publication does not itself indicate leadership acceptance. An accepted artifact must be preserved, but it does not have to be published in Developedia. Copilot and coding agents can assist; humans remain responsible for decisions and validation.
+
+## About the reference project
+
+The [Harborlight Heat & Shade Atlas](projects/da-eo-001/index.qmd) is entirely synthetic. Its people, places, dates, measurements, decisions, and review history are fabricated for training. It demonstrates three deliverable states, manual feedback translation, repository preservation, selective knowledge curation, and cohort handoff without using production participant or partner data.

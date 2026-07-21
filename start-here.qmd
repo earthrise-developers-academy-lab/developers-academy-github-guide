@@ -1,0 +1,139 @@
+---
+title: "Start here"
+description: "Begin useful project work from an approved GitHub Issue."
+---
+
+You do not need to know every Git feature before contributing. Begin with a clearly scoped Issue, keep its record current, and ask a repository steward for support when the work reaches an unfamiliar Git step.
+
+## Your first project session
+
+1. Open the GitHub Project your team uses to find work.
+2. Open the assigned or available Issue. The Issue—not the Project card—is authoritative.
+3. Confirm whether it represents a task, bug, decision, or deliverable.
+4. Read the objective, boundaries, owner, steward, acceptance criteria, working-artifact location, current status, and next action.
+5. Ask a steward about missing scope or conflicting instructions before beginning.
+6. Assign or claim the Issue through the team's approved process.
+7. Record your first action and move the Issue to `in-progress` only when work has actually begun.
+8. Link any approved Google Doc, Sheet, Slide deck, notebook, or other working material from the Issue.
+9. Post progress and blockers in the Issue as the work changes.
+10. Use a reviewed pull request when accepted work needs to enter a Git repository.
+
+GitHub Desktop is the default participant interface for branches, commits, and pull requests. It is not mandatory for stewards, Codex, or advanced contributors using another Git client.
+
+## Read an Issue before claiming it
+
+A usable Issue should answer:
+
+- What result is needed?
+- What is explicitly inside and outside scope?
+- Who owns the work, and which steward can help?
+- What artifact should exist?
+- Where is the working draft?
+- What acceptance criteria must be satisfied?
+- What is the current status and next action?
+- What evidence, review, or decision is still required?
+
+Do not invent a missing product decision. Ask in the Issue so the answer is durable and visible to the next person.
+
+## Understand deliverable status
+
+The v0.1 vocabulary is fixed. Implementations must not invent another status without an approved Issue.
+
+| Status | Plain-language meaning |
+|---|---|
+| `not-started` | The deliverable is known, but work has not begun or prerequisites are incomplete. |
+| `ready` | Scope, ownership, criteria, and prerequisites are sufficient to begin. |
+| `in-progress` | Active work is underway and the Issue states the next action. |
+| `blocked` | Work cannot proceed; the Issue identifies the cause, impact, and help needed. |
+| `internal-review` | A participant, peer, or steward is checking the work. |
+| `leadership-review` | Leadership has an artifact, criteria, requested decision, history, deadline, and feedback path. |
+| `changes-requested` | Review produced required revisions and an assigned next action. |
+| `ready-for-repository` | Required review is complete and the artifact is ready for durable preservation. |
+| `pull-request-open` | A repository pull request is awaiting validation, review, or merge. |
+| `accepted` | Criteria and required decisions are recorded, and the accepted version is durably preserved. |
+| `archived` | The deliverable is no longer active and its history and disposition are retained. |
+
+Not every deliverable uses every status. `blocked` can interrupt an active stage, and `changes-requested` can return work to an earlier stage. The GitHub Project should be reconciled to reflect the authoritative Issue.
+
+## Link a working document
+
+Google Workspace supports drafting, comments, suggestions, and leadership review. It does not establish operational completion. Put the Issue URL in the working document when appropriate, and add an approved working-document link to the Issue:
+
+```markdown
+### Working document
+
+[Open the draft](APPROVED_WORKING_DOCUMENT_URL)
+
+The GitHub Issue remains authoritative for status and acceptance.
+```
+
+Never put a private or restricted link into public training content. Ask a steward which access-safe location to use.
+
+## Post a progress update
+
+```markdown
+### Progress update
+
+**Completed**
+- Reviewed the acceptance criteria.
+- Drafted the installation section.
+
+**Evidence**
+- Working document: <approved link>
+
+**Current blocker**
+- None.
+
+**Next action**
+- Draft the primary workflow.
+
+**Ready for review when**
+- Installation, workflow, and limitations are complete.
+```
+
+A progress comment provides evidence; it does not mark the deliverable accepted.
+
+## Report a blocker
+
+Move the authoritative Issue to `blocked` and add enough context for someone else to act:
+
+```markdown
+### Blocked
+
+**Blocker**
+I cannot access the approved synthetic dataset location.
+
+**Impact**
+Validation cannot begin.
+
+**What I tried**
+Confirmed the link and requested access through the documented channel.
+
+**Needed**
+A steward must confirm the approved location or access path.
+
+**Next owner**
+Repository steward.
+```
+
+Record the resolution before returning the Issue to the appropriate active status.
+
+## Know when work is complete
+
+Implementation is ready for review when the Issue's bounded change exists, applicable validation has run, results are recorded, and known limitations are visible. A pull request can then preserve a repository change. The Issue becomes `accepted` only after all acceptance conditions and required decisions are recorded and the accepted artifact has a durable location.
+
+Leadership approval, a merged pull request, artifact preservation, Issue acceptance, and Quarto publication are separate events.
+
+## Ask a repository steward when
+
+- scope, acceptance criteria, or the correct next status is unclear;
+- repository access or an approved working-document link is missing;
+- information may be sensitive or restricted;
+- GitHub Desktop shows changes you did not make;
+- you edited the wrong branch or `main` directly;
+- a pull request includes unrelated files;
+- a merge conflict or validation failure appears;
+- review feedback is hard to translate into an action; or
+- Copilot proposes a large, unsafe, or poorly explained change.
+
+Use the Issue for project-specific help so the answer can support future participants.
