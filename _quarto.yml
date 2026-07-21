@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Developers Academy Platform"
+  site-url: "https://earthrise-developers-academy-lab.github.io/developers-academy-github-guide/"
+  repo-url: "https://github.com/earthrise-developers-academy-lab/developers-academy-github-guide"
+  repo-actions:
+    - source
+    - issue
+  repo-link-target: _blank
+  search: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+
+execute:
+  freeze: auto
