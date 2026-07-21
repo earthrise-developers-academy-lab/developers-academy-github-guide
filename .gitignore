@@ -1,4 +1,9 @@
+/.quarto/
+/_site/
 site/
 .venv/
 __pycache__/
+.pytest_cache/
 *.py[cod]
+
+**/*.quarto_ipynb

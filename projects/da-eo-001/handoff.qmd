@@ -1,0 +1,86 @@
+---
+title: "Harborlight cohort handoff"
+description: "A synthetic continuation record for project DA-EO-001."
+---
+
+::: {.callout-warning}
+This handoff is entirely synthetic. Every person, date, location, document, finding, decision, and access note is fictional.
+:::
+
+## Identity and current state
+
+- **Stable project identifier:** `DA-EO-001`
+- **Project:** Harborlight Heat & Shade Atlas (fictional)
+- **Iteration:** Pilot iteration (synthetic)
+- **Current phase:** Evidence review and preservation
+- **Current state:** one deliverable is in `leadership-review`, one is in `changes-requested`, and one is `accepted`
+- **Owner:** Nia Calder (fictional)
+- **Repository steward:** Omar Reyes (fictional)
+
+The stable project continues across iterations. A future cohort should add an iteration record rather than creating a new project identified only by year.
+
+## Blockers and next action
+
+**Current blockers:** D01 awaits a fictional leadership option decision. D02 cannot return to internal review until units and missing-value handling are explicit. D03 has no active blocker.
+
+**Next action:** Omar Reyes (fictional steward) manually records the D01 leadership response in its illustrative Issue record. Nia Calder then owns any D01 revision. Eli Navarro (fictional) revises D02 and requests internal review.
+
+## Durable decisions and rationale
+
+| Decision | Rationale |
+|---|---|
+| Use fabricated observations only. | The vertical slice tests workflow and must not expose production participant, partner, project, or location data. |
+| Keep one stable project ID. | Later cohorts need a continuous record rather than disconnected cohort-year projects. |
+| Translate leadership feedback manually. | v0.1 excludes Google Workspace synchronization and automatic Issue creation. |
+| Preserve accepted D03 in the repository. | The text artifact is suitable for reviewed Git history and local validation. |
+| Treat Developedia curation as optional. | Not every accepted artifact has lasting knowledge value. |
+
+This rationale is stored in repository content and must not exist only in an external draft.
+
+## Working-document links
+
+- **D01 decision draft:** nonfunctional Google Workspace placeholder; no link or form is provided.
+- **D02 methods working note:** nonfunctional Google Workspace placeholder; no link is provided.
+- **D03 source:** [repository-preserved accepted artifact](deliverables/scope-and-data-safety-brief.qmd).
+
+The placeholders do not grant access, collect feedback, persist edits, or establish completion. A steward must replace them only with approved, access-safe locations in a real project.
+
+## Acceptance history
+
+- **D01:** not accepted; fictional leadership review is pending.
+- **D02:** not accepted; fictional steward review requested revisions.
+- **D03:** accepted in the illustrative Issue record after internal review and repository preservation. Leadership review was not required for this safety brief.
+
+Publication of any of these pages does not change that acceptance history.
+
+## Artifact locations
+
+- **Accepted artifact:** `projects/da-eo-001/deliverables/scope-and-data-safety-brief.qmd`
+- **D01 candidate:** rendered within its [leadership-review page](deliverables/priority-locations-decision-brief.qmd); not accepted or preserved as an accepted version
+- **D02 candidate:** [methods note source](deliverables/synthetic-methods-note.qmd); revisions remain required
+- **Repository:** this organization-controlled reference repository; no separate fictional application repository exists
+- **Approved archive:** none used in this example
+- **Developedia:** the project summary is published as selective context; D03 does not require a separate Developedia article
+
+## Unresolved Issues
+
+No live synthetic GitHub Issues were created. In a real implementation, these illustrative records would be separate authoritative Issues:
+
+1. `DA-EO-001-D01` — capture the fictional leadership decision and resulting status.
+2. `DA-EO-001-D02` — clarify temperature units and missing-value treatment.
+3. Handoff usability — test whether a new participant can locate every item on this page.
+
+Future work must not infer completion from this list or from Quarto publication.
+
+## Access dependencies
+
+There are no real access dependencies. The fictional Google Workspace placeholders intentionally do not resolve. A future live handoff must name the steward responsible for approved access without placing private links in public content.
+
+## Maintenance and continuation expectations
+
+- Reconcile displayed metadata with the associated authoritative Issues when live Issues exist.
+- Keep the v0.1 status vocabulary exact until an approved Issue changes it.
+- Re-run Quarto rendering, metadata validation, tests, and link inspection after edits.
+- Preserve accepted artifact versions through reviewed pull requests or an approved archive.
+- Record new rationale locally or in GitHub, not solely in an external working document.
+- Reassess Developedia value separately from acceptance and preservation.

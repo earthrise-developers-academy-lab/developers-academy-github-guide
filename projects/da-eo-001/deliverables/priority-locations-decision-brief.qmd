@@ -1,0 +1,102 @@
+---
+title: "Priority Locations Decision Brief"
+description: "A synthetic leadership review of five fictional shade-planning locations."
+project-id: DA-EO-001
+deliverable-id: DA-EO-001-D01
+status: leadership-review
+owner: "Nia Calder (fictional)"
+reviewer: "Dr. Imani Brooks (fictional program leader)"
+synthetic: true
+requested-decision: "Select Option A or Option B for the next synthetic planning exercise."
+deadline: "2030-04-19 (fictional)"
+---
+
+::: {.callout-warning}
+## Fictional leadership-review example
+
+Harborlight, all five locations, every person, date, measurement, finding, option, and review event below are fabricated. Nothing on this page supports a real planning decision.
+:::
+
+## Review at a glance
+
+- **Project:** Harborlight Heat & Shade Atlas (`DA-EO-001`)
+- **Phase:** Evidence review and preservation
+- **Deliverable:** Priority Locations Decision Brief (`DA-EO-001-D01`)
+- **Owner:** Nia Calder (fictional)
+- **Reviewer:** Dr. Imani Brooks (fictional program leader)
+- **Authoritative status:** `leadership-review` (shown as text, not color)
+- **Fictional review deadline:** April 19, 2030
+- **Requested decision:** select Option A or Option B for the next synthetic planning exercise
+
+This is a static review surface. In a live project, the associated GitHub Issue—not this page—would be authoritative for status, criteria, decisions, and recorded acceptance.
+
+## Plain-language project summary
+
+The fictional Harborlight team is practicing how to choose a small set of locations for a later shade-planning exercise. Five invented locations were compared using fabricated afternoon surface temperature, shade coverage, and pedestrian activity. Leadership is being asked to choose how the team should narrow the next exercise, not to approve a real intervention.
+
+## Artifact under review
+
+The artifact is the [synthetic priority evidence rendered below](#synthetic-priority-evidence). There is no private document or external application behind it.
+
+### Synthetic priority evidence {#synthetic-priority-evidence}
+
+| Fictional location | Modeled surface temperature at 3 p.m. (°C) | Estimated shade at 3 p.m. (%) | Invented pedestrian count per hour | Training note |
+|---|---:|---:|---:|---|
+| Alder Wharf | 43.2 | 8 | 118 | High fabricated exposure and activity |
+| Beacon Steps | 40.6 | 14 | 92 | Moderate fabricated activity near steps |
+| Cormorant Court | 41.8 | 31 | 61 | Higher invented shade than peers |
+| Driftwood Plaza | 44.1 | 5 | 77 | Highest fabricated temperature |
+| Eastglass Transit Walk | 42.7 | 11 | 136 | Highest invented activity; uncertainty note pending |
+
+Every value is synthetic. The table is intentionally small and incomplete.
+
+## Options
+
+### Option A — exposure-first exercise
+
+Continue with Alder Wharf and Driftwood Plaza because their invented temperature and shade values show the greatest modeled exposure. This option emphasizes the synthetic physical indicators but gives less weight to pedestrian activity.
+
+### Option B — use-and-exposure exercise
+
+Continue with Alder Wharf and Eastglass Transit Walk because both combine low invented shade with high fabricated pedestrian activity. This option balances several training indicators but depends on an unresolved uncertainty note for Eastglass.
+
+## Acceptance criteria
+
+For this fictional deliverable to leave leadership review:
+
+- leadership selects Option A or Option B, requests a specified change, or explicitly defers the decision;
+- the response identifies any condition or uncertainty that must be addressed;
+- a steward manually records the response and source context in the associated Issue;
+- the Issue receives the appropriate next status and named owner;
+- required revisions receive internal review; and
+- any accepted version is preserved in an organization-controlled repository or approved archive with its location recorded.
+
+Viewing or publishing this page does not satisfy these criteria.
+
+## Requested decision
+
+Please select **Option A** or **Option B**, or request a specific revision, by the fictional deadline of **April 19, 2030**. If selecting Option B, please state whether the pending Eastglass uncertainty note must be resolved before the next exercise.
+
+## Prior review history
+
+| Fictional date | Review event | Outcome |
+|---|---|---|
+| April 2, 2030 | Nia Calder completed a synthetic internal draft. | Missing limitations were identified. |
+| April 5, 2030 | Omar Reyes performed fictional steward review. | Limitations and the two decision options were added. |
+| April 8, 2030 | The illustrative Issue moved to `leadership-review`. | Decision pending; no acceptance recorded. |
+
+## Limitations
+
+- Measurements, counts, and locations are invented and have no external validity.
+- The scoring rationale is illustrative, not a validated prioritization method.
+- Five rows cannot represent a real community or planning context.
+- No equity, feasibility, cost, maintenance, ownership, or community preference evidence is included.
+- Eastglass has a deliberately unresolved uncertainty note for the training workflow.
+
+## Non-GitHub feedback path — placeholder only
+
+::: {.callout-note}
+**This is not a working form, button, email address, or Google Workspace link.** In a live project, leadership would use an approved non-GitHub feedback mechanism supplied by the program. Quarto is static: it cannot save edits, persist comments, synchronize Google Workspace, or create GitHub work.
+:::
+
+After feedback arrives through the approved channel, Omar Reyes (fictional steward) manually summarizes the decision or requested changes in the associated Issue, names the owner and next action, and updates its status. Until that translation occurs, the feedback does not change authoritative operational or acceptance status.

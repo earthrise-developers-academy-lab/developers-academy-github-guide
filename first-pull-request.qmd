@@ -1,0 +1,71 @@
+---
+title: "Your first pull request"
+description: "A supported GitHub Desktop workflow for a small repository change."
+---
+
+A pull request proposes a set of repository changes for review. It does not by itself mean that leadership accepted a deliverable or that the Issue is complete.
+
+GitHub Desktop is the default participant interface in this guide. Stewards and advanced contributors may use another Git client while following the same Issue, branch, validation, and review rules.
+
+## Before opening GitHub Desktop
+
+Confirm that you have:
+
+- an approved Issue with clear acceptance criteria;
+- repository access;
+- the expected base branch, normally `main`;
+- the name of a repository steward who can help; and
+- a small change that fits the Issue.
+
+## Complete the workflow
+
+1. **Open the Issue.** Read its objective, boundaries, acceptance criteria, relevant discussion, and current status.
+2. **Get the repository.** In GitHub Desktop, choose **File > Clone repository** if the repository is not already on your computer. Select the organization repository and a local folder you can find again.
+3. **Fetch current work.** Choose **Fetch origin**. If GitHub Desktop offers changes from the remote base branch, ask a steward if you are unsure whether to pull them.
+4. **Create an Issue-specific branch.** From **Current branch**, choose **New branch** and use a descriptive name such as `issue-12-add-participant-guide`. Create it from the expected base branch.
+5. **Make the bounded edit.** Open the repository in the designated editor and change only the files required by the Issue.
+6. **Review the diff.** Return to GitHub Desktop. Select each changed file and inspect every added and removed line. Stop if unrelated or unfamiliar changes appear.
+7. **Validate.** Run the commands documented in the repository. Ask a steward to help if you are not yet comfortable with the terminal; the checks still need to be recorded accurately.
+8. **Create a focused commit.** Select only related files, write a specific summary such as `Add participant progress example`, and choose **Commit to _branch-name_**.
+9. **Publish the branch.** Choose **Publish branch**. This copies the branch to GitHub; it does not change `main`.
+10. **Preview the pull request.** Choose **Preview Pull Request** or **Create Pull Request**. Confirm the base is `main`, the compare branch is yours, and the file list contains only intended changes.
+11. **Describe the proposal.** Link the Issue, summarize the change, list validation results, and identify limitations or unverified assumptions. Use `Fixes #<number>` only if merge will fully resolve the Issue.
+12. **Request review.** Submit the pull request and request the appropriate steward or reviewer. Respond to feedback with additional focused commits on the same branch.
+
+## Branches, commits, and pull requests
+
+- A **branch** is your isolated workspace. Creating one protects the shared base branch while you edit.
+- A **commit** is a named snapshot of selected changes. Several focused commits can live on one branch.
+- A **pull request** compares your branch with the base branch and provides the review gate before merge.
+
+None of these replaces the Issue. Keep progress, blockers, decisions, acceptance evidence, and the next action in the authoritative Issue.
+
+## Pull request description template
+
+```markdown
+## Summary
+
+- Explain the participant-visible outcome.
+
+## Issue
+
+- Relates to #<issue-number>
+
+## Validation
+
+- [ ] Required automated checks passed
+- [ ] Changed files and full diff reviewed
+- [ ] Rendered output inspected when relevant
+
+## Limitations or follow-up
+
+- List any remaining work or write "None known."
+```
+
+## Completion states
+
+Your branch is **published** when it exists on GitHub. Your pull request is **open** when reviewers can inspect it. The repository change is **preserved** only after approved merge. The Issue is **accepted** only when its acceptance record and durable artifact location satisfy the platform contract. Quarto publication and leadership acceptance remain separate.
+
+## Stop and ask a steward
+
+Ask for help before continuing if you edited `main`, created the branch from the wrong base, see unexpected files, cannot explain the diff, encounter a merge conflict, cannot run required validation, lack permission to publish, or are unsure whether the pull request fully resolves the Issue.
