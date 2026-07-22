@@ -1,0 +1,40 @@
+---
+title: "Onboarding practice — participant-alias"
+synthetic: true
+---
+
+::: {.callout-warning}
+## Synthetic practice only
+
+Use an assigned fictional alias or public GitHub username. Do not include private or legal names unless separately approved; email addresses; telephone numbers; employer information; demographic, medical, or accessibility information; real project or partner information; private links; credentials; or sensitive narratives.
+:::
+
+## Practice identity
+
+**Alias:** participant-alias
+
+**Fictional role:** Documentation practice contributor
+
+## Exercise completed
+
+I completed the synthetic Issue-to-pull-request onboarding exercise.
+
+## Checklist
+
+- [ ] Located the assigned Issue
+- [ ] Read the objective and acceptance criteria
+- [ ] Claimed the Issue and posted a starting update
+- [ ] Created an Issue-linked branch
+- [ ] Opened the correct branch in GitHub Desktop
+- [ ] Reviewed the complete diff
+- [ ] Created a focused commit
+- [ ] Pushed the branch
+- [ ] Opened a linked pull request against `main`
+- [ ] Requested steward review
+- [ ] Responded to simulated review feedback
+
+## Optional reflection
+
+The workflow step that was most confusing was: [one sentence about workflow friction, or remove this sentence].
+
+A merged submission demonstrates completion of this repository-practice exercise only. It does not establish leadership acceptance, Issue acceptance beyond the practice Issue, artifact acceptance, or broader program completion.

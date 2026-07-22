@@ -1,0 +1,36 @@
+---
+title: "Participant practice exercise"
+description: "Practice one bounded Issue-to-pull-request contribution with GitHub Desktop."
+---
+
+Use only the assigned synthetic alias and fictional practice content. Before starting, read how to [understand and update an Issue](../start-here.qmd) and review the supported [GitHub Desktop pull-request workflow](../first-pull-request.qmd). Ask the named steward for help at any stop point described in those guides or the [steward guide](../stewards.qmd).
+
+## Complete the practice workflow
+
+1. Open the assigned, manually created practice Issue.
+2. Identify its objective and acceptance criteria in your own words.
+3. Assign yourself when repository permissions and the facilitator's instructions allow it. Otherwise, claim the Issue with a comment.
+4. Post a starting-work update that states the first action and any blocker. Use the [progress-update pattern](../start-here.qmd#post-a-progress-update) rather than inventing a separate status record.
+5. Create an Issue-linked branch from `main` using the branch name supplied by or agreed with the steward.
+6. Open the correct repository and branch in GitHub Desktop.
+7. Copy `pilot/submission-template.qmd` to `practice/submissions/<assigned-alias>.qmd`. Replace `<assigned-alias>` with the assigned lowercase alias and use only letters, numbers, and hyphens.
+8. Replace only the approved synthetic fields in the copy. Do not add metadata or personal information.
+9. In GitHub Desktop, inspect the complete diff for every changed file. Stop if anything unrelated or unfamiliar appears.
+10. Create a focused commit, then push or publish the branch. A commit records a snapshot; pushing copies the branch to GitHub.
+11. Open a pull request against `main`. Include `Fixes #<issue-number>` with the assigned practice Issue number, summarize the change, and record validation accurately.
+12. Request review from the named repository steward.
+13. Respond to the steward's one simulated review comment. Make and push a focused correction if the comment requests one.
+14. After an authorized steward merges the pull request and the site is published, find the rendered submission under the practice area.
+
+The detailed client steps and terminology remain in [Your first pull request](../first-pull-request.qmd); this exercise is the task sequence, not a replacement guide. If validation fails, repository access is missing, the branch is wrong, or feedback is unclear, stop and ask the steward.
+
+## Completion states are separate
+
+- **Participant work complete:** the participant has completed the requested edit, validation, pull request, review response, and progress record.
+- **Pull-request review complete:** an authorized reviewer has accepted the proposed repository change.
+- **Merged:** an authorized person has integrated the pull request into `main`.
+- **Issue closed:** GitHub applies `Fixes #<issue-number>` after merge when the linked practice Issue is fully resolved. Closing is not broader acceptance.
+- **Published:** the merged Quarto source has been rendered and deployed. Publication does not prove leadership or Issue acceptance.
+- **Broader program complete:** determined outside this repository practice; a merged submission alone does not establish it.
+
+Record any blocker in the authoritative practice Issue. Do not use the Quarto page, branch, commit, or pull request as a substitute for the Issue's operational record.

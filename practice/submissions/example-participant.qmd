@@ -1,0 +1,40 @@
+---
+title: "Onboarding practice — participant-example"
+synthetic: true
+---
+
+::: {.callout-warning}
+## Fictional example
+
+`participant-example` is an invented alias. This page describes no real account, person, employer, partner, or project.
+:::
+
+## Practice identity
+
+**Alias:** participant-example
+
+**Fictional role:** Data documentation practice contributor
+
+## Exercise completed
+
+I completed the fictional Issue-to-pull-request onboarding exercise.
+
+## Checklist
+
+- [x] Located the assigned Issue
+- [x] Read the objective and acceptance criteria
+- [x] Claimed the Issue and posted a starting update
+- [x] Created an Issue-linked branch
+- [x] Opened the correct branch in GitHub Desktop
+- [x] Reviewed the complete diff
+- [x] Created a focused commit
+- [x] Pushed the branch
+- [x] Opened a linked pull request against `main`
+- [x] Requested steward review
+- [x] Responded to simulated review feedback
+
+## Optional reflection
+
+The most confusing fictional step was distinguishing a local commit from pushing the branch to GitHub.
+
+This example demonstrates the expected safe structure only. It is not an actual participant record or pilot result.

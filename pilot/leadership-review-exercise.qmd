@@ -1,0 +1,46 @@
+---
+title: "Leadership-review exercise"
+description: "Test whether a non-GitHub reviewer can understand a synthetic decision brief."
+---
+
+This exercise uses the existing [Priority Locations Decision Brief](../projects/da-eo-001/deliverables/priority-locations-decision-brief.qmd). The brief and every project detail are synthetic. The reviewer does not need a GitHub account or knowledge of branches, commits, pull requests, or repository structure.
+
+## Facilitator setup
+
+Open the published decision brief for the reviewer and provide an approved, accessible response channel outside GitHub. The brief's **Non-GitHub feedback path** is an explicit, nonfunctional placeholder: it is not a form or control, and Quarto does not save, send, or synchronize feedback.
+
+Do not provide a private response link in public pilot materials. Do not coach the reviewer toward an answer unless clarification is necessary; record any clarification as an intervention.
+
+## Reviewer tasks
+
+Using only the decision brief:
+
+1. Explain the fictional project's purpose.
+2. Identify the artifact under review.
+3. Identify its current status.
+4. State the requested decision.
+5. Locate and summarize the acceptance criteria.
+6. Identify the fictional review deadline.
+7. Explain where feedback would be provided in a live session.
+8. Explain what should happen after feedback is submitted.
+9. Through the facilitator-supplied non-GitHub channel, provide a short simulated response: select Option A or Option B, request a specific revision, or defer the decision, using only the fictional context.
+
+Submitting the simulated response does not change project status. A steward would need to translate actionable feedback manually into the authoritative Issue. The existing [steward guidance](../stewards.qmd#translate-leadership-feedback-manually) explains that separate step.
+
+## Facilitator observations
+
+Record whether:
+
+- GitHub knowledge was required;
+- the requested decision was clear;
+- the acceptance criteria were understandable;
+- the non-GitHub feedback path was clear;
+- the reviewer confused Quarto publication with leadership or Issue acceptance;
+- the reviewer understood that a steward manually translates actionable feedback into the Issue; and
+- the reviewer requested changes to the leadership interface.
+
+Also record elapsed minutes, interventions, unclear wording, and a proceed, revise-and-repeat, or stop recommendation in the [blank results template](results-template.qmd). Use no private identifying information.
+
+## Completion
+
+The exercise is complete when the reviewer has attempted every identification task, provided a synthetic response outside GitHub, and explained the manual next step. Completion is usability evidence only; it is not a real leadership decision, acceptance record, or status change.

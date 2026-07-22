@@ -38,10 +38,11 @@ quarto check
 quarto render
 python -m pytest
 python scripts/validate_projects.py
+python scripts/validate_practice_submissions.py
 git diff --check
 ```
 
-The metadata validator reads local project and deliverable front matter only. It performs no network requests and writes no files.
+The validators read local project, deliverable, and practice-submission front matter only. They perform no network requests and write no files. Practice submissions must be explicitly synthetic. Do not commit or publish completed real participant observation records without separate privacy review and explicit approval.
 
 ## Key pages
 
@@ -49,6 +50,8 @@ The metadata validator reads local project and deliverable front matter only. It
 - [Start here](start-here.qmd) guides a participant from an Issue through progress and blocker updates.
 - [First pull request](first-pull-request.qmd) uses GitHub Desktop as the default participant interface.
 - [Troubleshoot with Copilot](copilot-troubleshooting.qmd) demonstrates evidence-based, human-reviewed assistance.
+- [Onboarding pilot](pilot/index.qmd) provides the reusable participant and leadership usability exercises.
+- [Practice submissions](practice/index.qmd) contains only the safe template workflow and explicitly synthetic examples.
 - [Projects](projects/index.qmd) lists the synthetic reference project and its deliverables.
 - [Leadership review](projects/da-eo-001/deliverables/priority-locations-decision-brief.qmd) shows a static, non-GitHub review surface.
 - [Repository stewards](stewards.qmd) covers scoping, support, review, preservation, and handoff.

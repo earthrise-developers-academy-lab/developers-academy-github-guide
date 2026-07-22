@@ -1,0 +1,50 @@
+---
+title: "Onboarding pilot"
+description: "Run a small, privacy-conscious usability exercise for participant and leadership workflows."
+---
+
+This kit tests whether the documented workflow is understandable in practice. It is a practical usability exercise, not validated human-subjects research, psychometric measurement, or personnel assessment. Do not rank participants or use observations to evaluate employment or program standing.
+
+## Profiles
+
+Run one session for each profile:
+
+- a **Git-confident participant** who can provide a comparison point;
+- a **Git-inexperienced participant** who uses GitHub Desktop with documented steward support; and
+- a **non-GitHub leadership reviewer** who reviews the existing synthetic decision brief without learning repository mechanics.
+
+Use separate synthetic session IDs and assigned fictional aliases. A public GitHub username may be used for the repository-practice submission, but a synthetic alias is preferred.
+
+## Tools and permissions
+
+Participant sessions require a manually created practice Issue, repository access, permission to comment and publish a branch, GitHub Desktop, an editor, and a named repository steward. The facilitator needs permission to create the practice Issues manually, review pull requests, and provide one simulated review comment. The leadership session needs a browser and an approved non-GitHub response channel supplied by the facilitator.
+
+This kit does not provision access or automatically create Issues, branches, pull requests, comments, or feedback records.
+
+## Pilot sequence
+
+1. The facilitator reads the [observation protocol](facilitator-observation.qmd), prepares two separate practice Issues from the [copyable Issue body](practice-issue-template.md), and assigns synthetic aliases.
+2. The Git-confident and Git-inexperienced participants separately complete the [participant exercise](participant-exercise.qmd) using the [safe submission template](submission-template.qmd).
+3. A steward supplies one simulated pull-request review comment and follows the repository's normal human review and merge process.
+4. The leadership reviewer completes the [leadership-review exercise](leadership-review-exercise.qmd) through the facilitator's approved non-GitHub channel.
+5. The facilitator summarizes each session with a separate copy of the [blank results template](results-template.qmd). Do not commit completed real observation records without approval.
+
+The [practice area](../practice/index.qmd) explains file naming and shows one explicitly fictional example.
+
+## Privacy and synthetic-data rules
+
+Use only invented roles, exercises, and aliases. Do not request or record private or legal names, contact details, employer information, demographic, medical, or accessibility information, real project or partner information, private links, credentials, restricted screenshots, or sensitive narratives. Stop before committing if unsafe material appears.
+
+Every published practice example must set `synthetic: true`. Steward review remains necessary because automated validation checks only narrow front-matter rules; it does not inspect prose for sensitive information.
+
+## Facilitator responsibilities
+
+The facilitator prepares access and synthetic materials, observes without leading, records participant actions separately from facilitator actions, distinguishes observed behavior from optional confidence, protects privacy, and stops unsafe sessions. The facilitator must not complete a core task for a participant and then report it as participant completion.
+
+## Outcomes
+
+- **Proceed:** all safety rules hold, the core workflows produce observable results, and remaining friction is minor enough for a bounded follow-up.
+- **Revise and repeat:** the workflow is safe but instructions, access preparation, or interface cues cause recoverable confusion that should be corrected before a larger pilot.
+- **Stop:** sensitive data or credentials are exposed, access prevents a safe session, the wrong repository or branch cannot be recovered safely, facilitator takeover is required, or a core workflow cannot be explained afterward.
+
+An outcome is evidence for improving the guide. It does not establish Issue acceptance, leadership acceptance, participant program completion, or research validity.

@@ -1,0 +1,24 @@
+---
+title: "Onboarding practice submissions"
+description: "A synthetic area for one small participant repository-practice contribution."
+---
+
+This area supports the [onboarding pilot](../pilot/index.qmd). A practice submission lets a participant exercise the documented Issue, branch, commit, push, pull-request, and review workflow with a deliberately small Quarto file.
+
+## File naming
+
+Copy `pilot/submission-template.qmd` to `practice/submissions/<assigned-alias>.qmd`. Replace the placeholder with the assigned lowercase synthetic alias, using only letters, numbers, and hyphens. Do not overwrite another submission or add a file outside `practice/submissions/`.
+
+## Synthetic content only
+
+Every submission must have a nonempty title and `synthetic: true`. It may contain only the assigned fictional alias or public GitHub username, a fictional role, one exercise sentence, the onboarding checklist, and an optional one-sentence workflow reflection. The [submission template](../pilot/submission-template.qmd) lists prohibited information.
+
+Automated validation checks front matter only. A steward must still review the diff for unsafe or unrelated content.
+
+## Contribution workflow
+
+Work from a manually created practice Issue and follow the [participant exercise](../pilot/participant-exercise.qmd). Review every changed line, validate the submission, open a pull request against `main`, link the Issue with the instructed closing keyword, and request steward review. Nothing on this page creates an Issue, branch, or pull request.
+
+## Example, not a participant record
+
+The [example participant submission](submissions/example-participant.qmd) is entirely fictional and demonstrates structure only. It is not evidence that a real person completed the pilot. Do not add completed observation records to this directory.
