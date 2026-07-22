@@ -1,0 +1,80 @@
+---
+title: "Facilitator observation protocol"
+description: "Observe the onboarding pilot consistently without ranking participants."
+---
+
+This protocol records observable workflow behavior for a practical usability pilot. It is not a research instrument, validated score, psychometric measure, or personnel assessment. Do not rank participants.
+
+## Preparation
+
+Before any session:
+
+1. Manually create separate practice Issues for the Git-confident and Git-inexperienced participants using the [practice Issue body](practice-issue-template.md).
+2. Assign a distinct synthetic alias and name the supporting steward in each Issue.
+3. Confirm each participant has repository access and the permissions needed to comment and publish a branch.
+4. Confirm GitHub Desktop is available and the participant can open the intended repository.
+5. Prepare one simulated pull-request review comment for each participant.
+6. Prepare an approved, accessible non-GitHub response channel for the leadership reviewer. Do not publish a private link in this repository.
+7. Recheck the [privacy rules](index.qmd#privacy-and-synthetic-data-rules) and the stop conditions below.
+
+The facilitator prepares access but does not automatically provision accounts, Issues, branches, or pull requests.
+
+## Neutral facilitation
+
+Let the participant attempt each task before intervening. Intervene when safety or access requires it, or when stalled progress makes the next observation impossible. Record exactly what the participant did and what the facilitator did; do not credit a facilitator action as participant completion.
+
+Record observable behavior separately from explanations and separately from optional self-reported confidence. A participant's confidence is not evidence that a task was completed, and an error is workflow evidence rather than a participant score.
+
+## Observable stages
+
+For each stage, record the completion state, elapsed minutes, intervention type, error if any, and recovery action. Observe whether the participant:
+
+- finds the assigned Issue;
+- explains its objective;
+- explains its acceptance criteria;
+- posts a meaningful starting update;
+- uses the correct repository and Issue-linked branch;
+- reviews the complete diff;
+- explains the difference between commit and push;
+- opens the pull request against `main`;
+- links the pull request to the Issue with the instructed closing keyword;
+- requests steward review;
+- responds to the simulated feedback; and
+- explains the Issue-to-branch-to-commit-to-push-to-PR-to-review-to-merge-to-publication workflow afterward.
+
+Use the [blank results template](results-template.qmd) for the consistent fields. Do not commit a completed real participant record without separate privacy review and explicit approval.
+
+## Intervention taxonomy
+
+Use exactly one primary label for each intervention:
+
+- **none** — no facilitator help;
+- **clarification** — restated existing wording without indicating an action;
+- **navigation prompt** — pointed to a location or page;
+- **procedural prompt** — identified the next workflow action;
+- **direct facilitator action** — the facilitator performed an action; or
+- **stopped for safety or access** — the session could not safely continue.
+
+Add a short factual note when the label alone does not explain the intervention.
+
+## Timing
+
+Record elapsed minutes for major stages only: Issue orientation, branch and file preparation, diff and validation, commit and push, pull request and review response, and final explanation. Approximate whole minutes are sufficient.
+
+Do not add telemetry, screen or audio recording, analytics, keystroke tracking, or automated behavioral collection. Record only what is necessary to improve the workflow.
+
+## Stop conditions
+
+Stop the session when:
+
+- sensitive or restricted data is entered or is about to be committed;
+- a credential or secret is exposed;
+- the participant is in an incorrect repository or branch and cannot safely recover;
+- repository or tool access fails and cannot be restored safely; or
+- the facilitator must take over a core participant task for the workflow to proceed.
+
+Protect or remove unsafe material through the approved steward process before any further repository action. Record the stop category with a synthetic session ID, not private identifying information.
+
+## Debrief
+
+Ask the participant to explain the end-to-end workflow and optionally report confidence. Keep the explanation, observed task results, and confidence in separate fields. Record bounded guide or workflow changes and candidate follow-up Issues; do not diagnose, rank, or characterize the participant.

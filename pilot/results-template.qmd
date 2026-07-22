@@ -1,0 +1,69 @@
+---
+title: "Blank pilot-results template"
+description: "A reusable structure for privacy-reviewed onboarding pilot summaries."
+---
+
+::: {.callout-danger}
+## Do not publish completed real observations without approval
+
+Do not commit or publish completed real participant observation records without separate privacy review and explicit approval. Do not record participant names or private identifying information. Use a synthetic session ID and assigned synthetic alias only.
+:::
+
+This is a blank reusable template, not an actual pilot record. Make a privacy-reviewed copy in an approved location for each session. Keep observable behavior separate from optional self-reported confidence.
+
+## Session context
+
+- **Synthetic session ID:**
+- **Pilot round or approved date:**
+- **Profile category:** `git-confident` / `git-inexperienced` / `leadership-reviewer`
+- **Assigned synthetic alias:**
+
+## Task observations
+
+Use only: `completed`, `completed with intervention`, `not completed`, or `not attempted`.
+
+| Major stage or task | Completion | Elapsed minutes | Intervention type | Observable note |
+|---|---|---:|---|---|
+| Issue or brief orientation |  |  |  |  |
+| Objective and criteria explanation |  |  |  |  |
+| Starting update, if applicable |  |  |  |  |
+| Repository, branch, and file preparation, if applicable |  |  |  |  |
+| Diff review and validation, if applicable |  |  |  |  |
+| Commit and push, if applicable |  |  |  |  |
+| Pull request, linkage, and review response, if applicable |  |  |  |  |
+| Leadership decision and feedback path, if applicable |  |  |  |  |
+| End-to-end explanation |  |  |  |  |
+
+Allowed intervention types: `none`, `clarification`, `navigation prompt`, `procedural prompt`, `direct facilitator action`, and `stopped for safety or access`.
+
+## Errors and recovery
+
+- **Critical errors:**
+- **Recoverable errors:**
+- **Recovery actions:**
+- **Unresolved access or tooling constraints:**
+
+## Instruction and interface findings
+
+- **Instructions that were unclear:**
+- **Public guide pages consulted:**
+- **Requested interface changes:**
+
+Do not list private links or restricted screenshots. Refer only to public guide page titles or repository-relative paths.
+
+## Understanding and optional confidence
+
+- **Observed end-to-end understanding:**
+- **Optional self-reported confidence:**
+
+Confidence is self-report and must not replace the observable task record.
+
+## Recommendations
+
+- **Guide-change recommendations:**
+- **Workflow-change recommendations:**
+- **Recommendation:** `proceed` / `revise and repeat` / `stop`
+- **Rationale:**
+- **Candidate follow-up Issues:**
+
+This record does not establish participant ranking, broader program completion, leadership acceptance, Issue acceptance, artifact preservation, or research validity.

@@ -4,6 +4,8 @@ project:
   render:
     - "*.qmd"
     - "projects/**/*.qmd"
+    - "pilot/**/*.qmd"
+    - "practice/**/*.qmd"
 
 website:
   title: "Developers Academy Platform"
@@ -27,6 +29,8 @@ website:
             href: first-pull-request.qmd
           - text: "Troubleshoot with Copilot"
             href: copilot-troubleshooting.qmd
+          - text: "Onboarding pilot"
+            href: pilot/index.qmd
       - text: "Projects"
         href: projects/index.qmd
       - text: "Leadership review"

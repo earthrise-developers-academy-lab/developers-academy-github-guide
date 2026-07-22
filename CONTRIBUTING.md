@@ -37,6 +37,7 @@ quarto check
 quarto render
 python -m pytest
 python scripts/validate_projects.py
+python scripts/validate_practice_submissions.py
 git diff --check
 ```
 
@@ -52,5 +53,7 @@ Also inspect navigation, internal links, listings, and the rendered site at desk
 - Developedia contains selected accepted knowledge, not every accepted artifact.
 - Copilot and coding agents provide assistance that a human must verify.
 - Never add credentials, restricted links, or real participant or partner data.
+- Practice submissions must use an assigned synthetic alias or public GitHub username and must remain explicitly synthetic.
+- Do not commit or publish completed real participant observation records without separate privacy review and explicit approval.
 
 Keep each pull request limited to one issue.
