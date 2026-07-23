@@ -1,6 +1,5 @@
 /.quarto/
 /_site/
-/_generated/
 site/
 .venv/
 __pycache__/

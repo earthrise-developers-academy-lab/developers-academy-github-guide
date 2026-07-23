@@ -38,9 +38,6 @@ quarto render
 python -m pytest
 python scripts/validate_projects.py
 python scripts/validate_practice_submissions.py
-python scripts/validate_project_map_data.py
-python scripts/build_project_explorer_fallback.py
-python scripts/build_project_explorer_fallback.py --check
 git diff --check
 ```
 
@@ -58,11 +55,5 @@ Also inspect navigation, internal links, listings, and the rendered site at desk
 - Never add credentials, restricted links, or real participant or partner data.
 - Practice submissions must use an assigned synthetic alias or public GitHub username and must remain explicitly synthetic.
 - Do not commit or publish completed real participant observation records without separate privacy review and explicit approval.
-- Update the applicable JSON Schema when the explorer data contract changes, validate map data, and regenerate the deterministic fallback.
-- Preserve immutable source references, licenses, versions, and checksums when updating vendored map dependencies.
-- Review explorer keyboard operation, visible focus, error states, JavaScript-disabled fallback, and desktop and narrow layouts.
-- Do not add real project locations or boundaries without separately approved governance, privacy review, and authorization.
-- Keep canonical private project data in a separate private organization-controlled repository or approved secure store. Browser code and rendered files may use only synthetic fixtures or reviewed public-safe exports and must never contain credentials or private URLs.
-- Use local Quarto preview by default. Follow the [publication lifecycle procedure](docs/operations/publication-lifecycle.md) for authorized temporary remote testing and immediate manual unpublishing.
 
 Keep each pull request limited to one issue.

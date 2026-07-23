@@ -6,11 +6,6 @@ on:
     branches:
       - main
   workflow_dispatch:
-    inputs:
-      confirm_publish:
-        description: "Enter PUBLISH to deploy the site temporarily"
-        required: true
-        type: string
 
 permissions:
   contents: read
@@ -41,18 +36,12 @@ jobs:
         run: python -m pip install -r requirements.txt
       - name: Check Quarto installation
         run: quarto check
+      - name: Run tests
+        run: python -m pytest
       - name: Validate project metadata
         run: python scripts/validate_projects.py
       - name: Validate practice submissions
         run: python scripts/validate_practice_submissions.py
-      - name: Validate project-map data
-        run: python scripts/validate_project_map_data.py
-      - name: Generate project explorer fallback
-        run: python scripts/build_project_explorer_fallback.py
-      - name: Check project explorer fallback
-        run: python scripts/build_project_explorer_fallback.py --check
-      - name: Run tests
-        run: python -m pytest
       - name: Render website
         run: quarto render
       - name: Configure GitHub Pages
@@ -63,7 +52,7 @@ jobs:
           path: _site
 
   deploy:
-    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_publish == 'PUBLISH'
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

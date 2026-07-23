@@ -39,9 +39,6 @@ quarto render
 python -m pytest
 python scripts/validate_projects.py
 python scripts/validate_practice_submissions.py
-python scripts/validate_project_map_data.py
-python scripts/build_project_explorer_fallback.py
-python scripts/build_project_explorer_fallback.py --check
 git diff --check
 ```
 
@@ -56,7 +53,6 @@ The validators read local project, deliverable, and practice-submission front ma
 - [Onboarding pilot](pilot/index.qmd) provides the reusable participant and leadership usability exercises.
 - [Practice submissions](practice/index.qmd) contains only the safe template workflow and explicitly synthetic examples.
 - [Projects](projects/index.qmd) lists the synthetic reference project and its deliverables.
-- [Geography explorer](explore-projects.qmd) filters an explicitly synthetic project registry through an accessible map and semantic fallback table.
 - [Leadership review](projects/da-eo-001/deliverables/priority-locations-decision-brief.qmd) shows a static, non-GitHub review surface.
 - [Repository stewards](stewards.qmd) covers scoping, support, review, preservation, and handoff.
 
@@ -66,19 +62,9 @@ Begin with an approved GitHub Issue, make the smallest change that satisfies its
 
 ## GitHub Pages publication
 
-`.github/workflows/publish-guide.yml` validates pull requests and pushes to `main`, but the website is unpublished by default. Deployment requires a manual workflow run selected from `main` with the exact confirmation `PUBLISH`. Publishing the static site neither records leadership acceptance nor changes an Issue.
+`.github/workflows/publish-guide.yml` validates pull requests and builds pushes to `main`. It deploys `_site` to GitHub Pages only for a push to `main` or a manual run selected from `main`. Publishing the static site neither records leadership acceptance nor changes an Issue.
 
 Repository administrators must enable GitHub Pages with **GitHub Actions** as the source before the first deployment can succeed. This repository does not change that setting automatically.
-
-Use `quarto preview` for ordinary visual development. Temporary remote testing, immediate manual unpublishing, URL verification, private/public access distinctions, and future republishing are documented in [the publication lifecycle procedure](docs/operations/publication-lifecycle.md).
-
-## Geography explorer data
-
-The proof-of-concept explorer reads `data/projects.json` and `data/project-service-areas.geojson`. All records and service areas are synthetic demonstrations, not actual Developers Academy projects or boundaries. Update the versioned schemas with any contract change, validate the data, and regenerate the ignored `_generated/project-explorer-table.html` fallback before rendering or previewing.
-
-Leaflet 1.9.4 and Natural Earth 1:110m land context are vendored locally with provenance and checksums documented in `docs/dependencies/leaflet.md`. The explorer makes no runtime tile, package, GitHub API, or other external request. Production basemap selection remains a separate decision.
-
-Canonical private project data belongs in a separate private organization-controlled repository or approved secure store. This repository and its browser JavaScript may contain only synthetic fixtures or reviewed public-safe exports; credentials, private URLs, and canonical private records must never enter rendered files. An allowlist-based private-to-public exporter is deferred to a separate bounded Issue.
 
 ## Migration from MkDocs
 
