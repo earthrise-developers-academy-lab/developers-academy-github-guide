@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "schema_version": "1.0.0",
+  "last_updated": "2026-07-22",
+  "features": [
+    {
+      "type":"Feature","id":"DA-EO-001-SA-01",
+      "properties":{"service_area_id":"DA-EO-001-SA-01","project_id":"DA-EO-001","label":"Synthetic Mid-Atlantic coastal orientation point","geography_type":"site","geometry_representation":"representative-location","geometry_precision":"representative","geometry_source":"Synthetic generalized geometry created for Issue #5 demonstration; not a real project service area.","source_license":"Not applicable — synthetic demonstration geometry with no external boundary source.","synthetic":true},
+      "geometry":{"type":"Point","coordinates":[-76.2,38.4]}
+    },
+    {
+      "type":"Feature","id":"DA-EO-002-SA-01",
+      "properties":{"service_area_id":"DA-EO-002-SA-01","project_id":"DA-EO-002","label":"Synthetic Central Plains demonstration region","geography_type":"multi-jurisdiction-region","geometry_representation":"broad-service-region","geometry_precision":"generalized","geometry_source":"Synthetic generalized geometry created for Issue #5 demonstration; not a real project service area.","source_license":"Not applicable — synthetic demonstration geometry with no external boundary source.","synthetic":true},
+      "geometry":{"type":"Polygon","coordinates":[[[-102,37],[-96,37],[-96,42],[-102,42],[-102,37]]]}
+    },
+    {
+      "type":"Feature","id":"DA-EO-003-SA-01",
+      "properties":{"service_area_id":"DA-EO-003-SA-01","project_id":"DA-EO-003","label":"Synthetic coastal access orientation points","geography_type":"multi-jurisdiction-region","geometry_representation":"generalized-location","geometry_precision":"generalized","geometry_source":"Synthetic generalized geometry created for Issue #5 demonstration; not a real project service area.","source_license":"Not applicable — synthetic demonstration geometry with no external boundary source.","synthetic":true},
+      "geometry":{"type":"MultiPoint","coordinates":[[-80.1,32.7],[-75.2,36.2],[-71.2,41.2]]}
+    },
+    {
+      "type":"Feature","id":"DA-EO-004-SA-01",
+      "properties":{"service_area_id":"DA-EO-004-SA-01","project_id":"DA-EO-004","label":"Synthetic lower-river agricultural demonstration regions","geography_type":"multi-jurisdiction-region","geometry_representation":"broad-service-region","geometry_precision":"generalized","geometry_source":"Synthetic generalized geometry created for Issue #5 demonstration; not a real project service area.","source_license":"Not applicable — synthetic demonstration geometry with no external boundary source.","synthetic":true},
+      "geometry":{"type":"MultiPolygon","coordinates":[[[[-92,29],[-89,29],[-89,32],[-92,32],[-92,29]]],[[[-91,33],[-88,33],[-88,35],[-91,35],[-91,33]]]]}
+    },
+    {
+      "type":"Feature","id":"DA-EO-005-SA-01",
+      "properties":{"service_area_id":"DA-EO-005-SA-01","project_id":"DA-EO-005","label":"Synthetic interior mountain demonstration region","geography_type":"multi-jurisdiction-region","geometry_representation":"broad-service-region","geometry_precision":"generalized","geometry_source":"Synthetic generalized geometry created for Issue #5 demonstration; not a real project service area.","source_license":"Not applicable — synthetic demonstration geometry with no external boundary source.","synthetic":true},
+      "geometry":{"type":"Polygon","coordinates":[[[-112,38],[-106,38],[-106,44],[-112,44],[-112,38]]]}
+    },
+    {
+      "type":"Feature","id":"DA-EO-006-SA-01",
+      "properties":{"service_area_id":"DA-EO-006-SA-01","project_id":"DA-EO-006","label":"Synthetic Great Lakes urban orientation points","geography_type":"multi-jurisdiction-region","geometry_representation":"generalized-location","geometry_precision":"generalized","geometry_source":"Synthetic generalized geometry created for Issue #5 demonstration; not a real project service area.","source_license":"Not applicable — synthetic demonstration geometry with no external boundary source.","synthetic":true},
+      "geometry":{"type":"MultiPoint","coordinates":[[-87.6,41.9],[-83.0,42.3],[-79.9,43.0]]}
+    },
+    {
+      "type":"Feature","id":"DA-EO-007-SA-01",
+      "properties":{"service_area_id":"DA-EO-007-SA-01","project_id":"DA-EO-007","label":"Synthetic island-region orientation points","geography_type":"multi-jurisdiction-region","geometry_representation":"generalized-location","geometry_precision":"generalized","geometry_source":"Synthetic generalized geometry created for Issue #5 demonstration; not a real project service area.","source_license":"Not applicable — synthetic demonstration geometry with no external boundary source.","synthetic":true},
+      "geometry":{"type":"MultiPoint","coordinates":[[-66.4,18.2],[-157.9,20.8],[-64.8,32.3]]}
+    },
+    {
+      "type":"Feature","id":"DA-EO-009-SA-01",
+      "properties":{"service_area_id":"DA-EO-009-SA-01","project_id":"DA-EO-009","label":"Synthetic northwest forest-recovery demonstration region","geography_type":"multi-jurisdiction-region","geometry_representation":"broad-service-region","geometry_precision":"generalized","geometry_source":"Synthetic generalized geometry created for Issue #5 demonstration; not a real project service area.","source_license":"Not applicable — synthetic demonstration geometry with no external boundary source.","synthetic":true},
+      "geometry":{"type":"Polygon","coordinates":[[[-124,43],[-118,43],[-118,48],[-124,48],[-124,43]]]}
+    },
+    {
+      "type":"Feature","id":"DA-EO-010-SA-01",
+      "properties":{"service_area_id":"DA-EO-010-SA-01","project_id":"DA-EO-010","label":"Synthetic western river-basin demonstration region","geography_type":"watershed","geometry_representation":"broad-service-region","geometry_precision":"generalized","geometry_source":"Synthetic generalized geometry created for Issue #5 demonstration; not a real project service area.","source_license":"Not applicable — synthetic demonstration geometry with no external boundary source.","synthetic":true},
+      "geometry":{"type":"Polygon","coordinates":[[[-116,34],[-111,34],[-111,38],[-116,38],[-116,34]]]}
+    },
+    {
+      "type":"Feature","id":"DA-EO-010-SA-02",
+      "properties":{"service_area_id":"DA-EO-010-SA-02","project_id":"DA-EO-010","label":"Synthetic eastern river-basin demonstration region","geography_type":"watershed","geometry_representation":"broad-service-region","geometry_precision":"generalized","geometry_source":"Synthetic generalized geometry created for Issue #5 demonstration; not a real project service area.","source_license":"Not applicable — synthetic demonstration geometry with no external boundary source.","synthetic":true},
+      "geometry":{"type":"Polygon","coordinates":[[[-84,35],[-79,35],[-79,39],[-84,39],[-84,35]]]}
+    }
+  ]
+}

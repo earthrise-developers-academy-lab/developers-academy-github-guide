@@ -1,11 +1,17 @@
 project:
   type: website
   output-dir: _site
+  pre-render: python scripts/build_project_explorer_fallback.py
   render:
     - "*.qmd"
     - "projects/**/*.qmd"
     - "pilot/**/*.qmd"
     - "practice/**/*.qmd"
+  resources:
+    - "data/projects.json"
+    - "data/project-service-areas.geojson"
+    - "data/reference/natural-earth-land-110m.geojson"
+    - "assets/**"
 
 website:
   title: "Developers Academy Platform"
@@ -32,7 +38,11 @@ website:
           - text: "Onboarding pilot"
             href: pilot/index.qmd
       - text: "Projects"
-        href: projects/index.qmd
+        menu:
+          - text: "Project catalog"
+            href: projects/index.qmd
+          - text: "Geography explorer"
+            href: explore-projects.qmd
       - text: "Leadership review"
         href: projects/da-eo-001/deliverables/priority-locations-decision-brief.qmd
       - text: "Repository stewards"
