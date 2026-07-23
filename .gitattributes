@@ -1,0 +1,12 @@
+# Deterministic vendored Leaflet assets across Windows and Linux.
+assets/vendor/leaflet/1.9.4/leaflet.css text eol=lf
+assets/vendor/leaflet/1.9.4/leaflet.js text eol=lf
+assets/vendor/leaflet/1.9.4/LICENSE text eol=lf
+assets/vendor/leaflet/1.9.4/README.md text eol=lf
+assets/vendor/leaflet/1.9.4/VERSION text eol=lf
+assets/vendor/leaflet/1.9.4/SHA256SUMS text eol=lf
+assets/vendor/leaflet/1.9.4/images/layers.png binary
+assets/vendor/leaflet/1.9.4/images/layers-2x.png binary
+assets/vendor/leaflet/1.9.4/images/marker-icon.png binary
+assets/vendor/leaflet/1.9.4/images/marker-icon-2x.png binary
+assets/vendor/leaflet/1.9.4/images/marker-shadow.png binary
