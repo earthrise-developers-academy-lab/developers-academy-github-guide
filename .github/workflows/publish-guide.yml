@@ -37,31 +37,40 @@ jobs:
         with:
           python-version: "3.13"
           cache: pip
-      - name: Install dependencies
+            - name: Install dependencies
         run: python -m pip install -r requirements.txt
-      - name: Check Quarto installation
-        run: quarto check
+
       - name: Validate project metadata
         run: python scripts/validate_projects.py
+
       - name: Validate practice submissions
         run: python scripts/validate_practice_submissions.py
+
       - name: Validate project-map data
         run: python scripts/validate_project_map_data.py
+
       - name: Generate project explorer fallback
         run: python scripts/build_project_explorer_fallback.py
+
       - name: Check project explorer fallback
         run: python scripts/build_project_explorer_fallback.py --check
+
+      - name: Check Quarto installation
+        run: quarto check
+
       - name: Run tests
         run: python -m pytest
+
       - name: Render website
         run: quarto render
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
-
   deploy:
     if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_publish == 'PUBLISH'
     environment:
